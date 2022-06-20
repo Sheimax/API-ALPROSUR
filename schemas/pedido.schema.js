@@ -1,10 +1,10 @@
 const Joi = require("joi")
 
-const id = Joi.string()
-const supermercado = Joi.string().alphanum().min(2).max(30)
-const producto = Joi.string().alphanum().min(2).max(50)
-const cantidad = Joi.number().integer().min(2)
-const fecha = Joi.string().alphanum().min(6).max(10)
+const id = Joi.integer()
+const supermercado = Joi.string().min(2).max(30)
+const producto = Joi.string().min(2).max(50)
+const cantidad = Joi.number().integer()
+const fecha = Joi.string().min(6).max(12)
 
 const createPedidoSchema = Joi.object({
   supermercado: supermercado.required(),
