@@ -5,12 +5,12 @@ const user = "postgres"
 const host = "localhost"
 const port = 5432
 const password = "gow22Postgres"
-const database = "api_alprosur"
+const database = "p2"
 
 const USUARIO = encodeURIComponent(user)
 const PASSWORD = encodeURIComponent(password)
 
-const URI = `Postgres://${USUARIO}:${PASSWORD}@${host}:${port}/${database}`
+const URI = `postgres://${USUARIO}:${PASSWORD}@${host}:${port}/${database}`
 
 const sequelize = new Sequelize(URI, {
   dialect: "postgres",

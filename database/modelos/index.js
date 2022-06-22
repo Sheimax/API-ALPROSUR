@@ -1,5 +1,5 @@
 const {PEDIDO_TABLE, PedidoSchema, Pedido} = require("./pedido.model")
-const {TIPO_PEDIDO_TABLE, TipoPedidoSchema, TipoPedido} = require("./factura.model")
+const {TIPO_PEDIDO_TABLE, TipoPedidoSchema, TipoPedido} = require("./tipo.pedido.model")
 
 function setupModels(sequelize) {
   Pedido.init(PedidoSchema, Pedido.config(sequelize))
